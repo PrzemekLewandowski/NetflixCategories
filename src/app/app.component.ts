@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {CategoriesData} from './utils/categories-data';
 
 @Component({
   selector: 'app-root',
@@ -6,8 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  dataset = ['MDB', 'Angular', 'Bootstrap', 'Framework', 'SPA', 'React', 'Vue'];
-  title = 'Netflix Categories';
   searchText: any;
+  dataset = CategoriesData.CATEGORIES;
 
 }

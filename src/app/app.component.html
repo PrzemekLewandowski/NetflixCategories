@@ -3,7 +3,7 @@
     <div class="col">
       <div class="header">
         <h1>
-          Welcome to {{ title }}!
+          Explore hidden Netflix categories!
         </h1>
       </div>
     </div>
@@ -22,7 +22,7 @@
     <div class="col">
       <div class="search-result">
         <ul *ngFor="let data of dataset | filter: searchText">
-          <li class="list">{{data}}</li>
+          <li class="list">{{data.name}}</li>
         </ul>
       </div>
     </div>
