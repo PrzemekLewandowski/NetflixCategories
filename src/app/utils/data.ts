@@ -331,10 +331,6 @@ export abstract class Data {
         'Biographical', 'Dramas']
     },
     {
-      link: 29809, name: 'Classic Dramas ', categories: [
-        'Classic', 'Dramas']
-    },
-    {
       link: 528582748, name: 'Courtroom Dramas ', categories: [
         'Courtroom', 'Dramas']
     },
@@ -421,26 +417,6 @@ export abstract class Data {
     {
       link: 29764, name: 'Art House Movies ', categories: [
         'Art', 'House', 'Movies']
-    },
-    {
-      link: 11828, name: 'Foreign Action & Adventure ', categories: [
-        'Foreign', 'Action', 'Adventure']
-    },
-    {
-      link: 32473, name: 'Classic Foreign Movies ', categories: [
-        'Classic', 'Foreign', 'Movies']
-    },
-    {
-      link: 4426, name: 'Foreign Comedies ', categories: [
-        'Foreign', 'Comedies']
-    },
-    {
-      link: 5161, name: 'Foreign Documentaries ', categories: [
-        'Foreign', 'Documentaries']
-    },
-    {
-      link: 2150, name: 'Foreign Dramas ', categories: [
-        'Foreign', 'Dramas']
     },
     {
       link: 8243, name: 'Foreign Gay & Lesbian Movies ', categories: [
@@ -559,16 +535,8 @@ export abstract class Data {
         'Gay', 'Lesbian', 'Comedies']
     },
     {
-      link: 500, name: 'Gay & Lesbian Dramas ', categories: [
-        'Gay', 'Lesbian', 'Dramas']
-    },
-    {
       link: 3329, name: 'Romantic Gay & Lesbian Movies ', categories: [
         'Romantic', 'Gay', 'Lesbian', 'Movies']
-    },
-    {
-      link: 8243, name: 'Foreign Gay & Lesbian Movies ', categories: [
-        'Foreign', 'Gay', 'Lesbian', 'Movies']
     },
     {
       link: 4720, name: 'Gay & Lesbian Documentaries ', categories: [
@@ -587,16 +555,8 @@ export abstract class Data {
         'Creature', 'Features']
     },
     {
-      link: 10944, name: 'Cult Horror Movies ', categories: [
-        'Cult', 'Horror', 'Movies']
-    },
-    {
       link: 45028, name: 'Deep Sea Horror Movies ', categories: [
         'Deep', 'Sea', 'Horror', 'Movies']
-    },
-    {
-      link: 8654, name: 'Foreign Horror Movies ', categories: [
-        'Foreign', 'Horror', 'Movies']
     },
     {
       link: 89585, name: 'Horror Comedy ', categories: [
@@ -659,16 +619,8 @@ export abstract class Data {
         'Independent', 'Comedies']
     },
     {
-      link: 384, name: 'Independent Dramas ', categories: [
-        'Independent', 'Dramas']
-    },
-    {
       link: 1701, name: 'Music ', categories: [
         'Music']
-    },
-    {
-      link: 52843, name: 'Kids Music ', categories: [
-        'Kids', 'Music']
     },
     {
       link: 1105, name: 'Country & Western/Folk ', categories: [
@@ -727,28 +679,12 @@ export abstract class Data {
         'Quirky', 'Romance']
     },
     {
-      link: 9916, name: 'Romantic Independent Movies ', categories: [
-        'Romantic', 'Independent', 'Movies']
-    },
-    {
-      link: 7153, name: 'Romantic Foreign Movies ', categories: [
-        'Romantic', 'Foreign', 'Movies']
-    },
-    {
-      link: 1255, name: 'Romantic Dramas ', categories: [
-        'Romantic', 'Dramas']
-    },
-    {
       link: 35800, name: 'Steamy Romantic Movies ', categories: [
         'Steamy', 'Romantic', 'Movies']
     },
     {
       link: 31273, name: 'Classic Romantic Movies ', categories: [
         'Classic', 'Romantic', 'Movies']
-    },
-    {
-      link: 5475, name: 'Romantic Comedies ', categories: [
-        'Romantic', 'Comedies']
     },
     {
       link: 1492, name: 'Sci-Fi & Fantasy ', categories: [
@@ -761,14 +697,6 @@ export abstract class Data {
     {
       link: 3327, name: 'Alien Sci-Fi ', categories: [
         'Alien', 'Sci-Fi']
-    },
-    {
-      link: 47147, name: 'Classic Sci-Fi & Fantasy ', categories: [
-        'Classic', 'Sci-Fi', 'Fantasy']
-    },
-    {
-      link: 4734, name: 'Cult Sci-Fi & Fantasy ', categories: [
-        'Cult', 'Sci-Fi', 'Fantasy']
     },
     {
       link: 9744, name: 'Fantasy Movies ', categories: [
@@ -791,24 +719,8 @@ export abstract class Data {
         'Sci-Fi', 'Thrillers']
     },
     {
-      link: 6485, name: 'Foreign Sci-Fi & Fantasy ', categories: [
-        'Foreign', 'Sci-Fi', 'Fantasy']
-    },
-    {
       link: 4370, name: 'Sports Movies ', categories: [
         'Sports', 'Movies']
-    },
-    {
-      link: 5286, name: 'Sports Comedies ', categories: [
-        'Sports', 'Comedies']
-    },
-    {
-      link: 180, name: 'Sports Documentaries ', categories: [
-        'Sports', 'Documentaries']
-    },
-    {
-      link: 7243, name: 'Sports Dramas ', categories: [
-        'Sports', 'Dramas']
     },
     {
       link: 12339, name: 'Baseball Movies ', categories: [
@@ -843,24 +755,8 @@ export abstract class Data {
         'Thrillers']
     },
     {
-      link: 43048, name: 'Action Thrillers ', categories: [
-        'Action', 'Thrillers']
-    },
-    {
-      link: 46588, name: 'Classic Thrillers ', categories: [
-        'Classic', 'Thrillers']
-    },
-    {
       link: 10499, name: 'Crime Thrillers ', categories: [
         'Crime', 'Thrillers']
-    },
-    {
-      link: 10306, name: 'Foreign Thrillers ', categories: [
-        'Foreign', 'Thrillers']
-    },
-    {
-      link: 3269, name: 'Independent Thrillers ', categories: [
-        'Independent', 'Thrillers']
     },
     {
       link: 31851, name: 'Gangster Movies ', categories: [
@@ -877,10 +773,6 @@ export abstract class Data {
     {
       link: 9994, name: 'Mysteries ', categories: [
         'Mysteries']
-    },
-    {
-      link: 11014, name: 'Sci-Fi Thrillers ', categories: [
-        'Sci-Fi', 'Thrillers']
     },
     {
       link: 9147, name: 'Spy Thrillers ', categories: [
@@ -917,10 +809,6 @@ export abstract class Data {
     {
       link: 72436, name: 'Food & Travel TV ', categories: [
         'Food', 'Travel', 'TV']
-    },
-    {
-      link: 27346, name: 'Kids TV ', categories: [
-        'Kids', 'TV']
     },
     {
       link: 67879, name: 'Korean TV Shows ', categories: [
