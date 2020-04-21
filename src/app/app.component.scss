@@ -2,7 +2,7 @@
 .container {
   display: grid;
   grid-gap: 20px;
-  grid-template-areas: "header" "search-category" "search-result" "footer";
+  grid-template-areas: "word-cloud" "search-category" "search-result" "footer";
   grid-template-rows:auto minmax(60px, auto) 1fr minmax(70px, auto) auto;
   width: 100%;
   @media (min-width: map-get($grid-breakpoints, sm)) {
@@ -30,10 +30,10 @@
   color: whitesmoke;
 }
 
-.header {
-  grid-area: header;
+.word-cloud {
+  grid-area: word-cloud;
   text-align: center;
-  margin-top: 7%;
+  margin-top: 5%;
   font-family: 'Inconsolata', monospace;
   color: whitesmoke;
 }

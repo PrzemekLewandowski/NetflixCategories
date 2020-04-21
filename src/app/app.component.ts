@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {CategoriesData} from './utils/categories-data';
+import {WordCounterService} from './utils/word-counter.service';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,11 @@ import {CategoriesData} from './utils/categories-data';
 export class AppComponent {
   searchText: any;
   dataset = CategoriesData.CATEGORIES;
+  categories: any;
+
+  constructor(private wordCounter: WordCounterService) {
+    this.categories = wordCounter.wordFreq();
+  }
+
 
 }
