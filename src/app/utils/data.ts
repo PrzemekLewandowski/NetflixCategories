@@ -1,6 +1,6 @@
 import {Categories} from './categories';
 
-export abstract class CategoriesData {
+export abstract class Data {
   static readonly CATEGORIES: Array<Categories> = [
     {
       link: 1365, name: 'Action & Adventure ', categories: [
@@ -832,7 +832,7 @@ export abstract class CategoriesData {
     },
     {
       link: 6695, name: 'Martial Arts, Boxing & Wrestling ', categories: [
-        'Martial', 'Arts,', 'Boxing', 'Wrestling']
+        'Martial', 'Arts', 'Boxing', 'Wrestling']
     },
     {
       link: 12762, name: 'Basketball Movies ', categories: [
@@ -981,6 +981,8 @@ export abstract class CategoriesData {
   ];
 
   static readonly DISABLED_WORDS: Array<string> = [
-    'and', 'for', 'to', 'on', '""'
+    'and', 'for', 'to', 'on'
   ];
+
+  static readonly NETFLIX_CATEGORY_PAGE: string = 'http://www.netflix.com/browse/genre/';
 }

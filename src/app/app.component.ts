@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
-import {CategoriesData} from './utils/categories-data';
-import {WordCounterService} from './utils/word-counter.service';
+import {Data} from './utils/data';
+import {WordUtilsService} from './utils/word-utils.service';
+import {CloudData, CloudOptions} from 'angular-tag-cloud-module';
 
 @Component({
   selector: 'app-root',
@@ -9,12 +10,28 @@ import {WordCounterService} from './utils/word-counter.service';
 })
 export class AppComponent {
   searchText: any;
-  dataset = CategoriesData.CATEGORIES;
-  categories: any;
+  dataset = Data.CATEGORIES;
+  cloudData: CloudData[];
+  options: CloudOptions = {
+    height: 150,
+    width: 1,
+    overflow: false,
+  };
 
-  constructor(private wordCounter: WordCounterService) {
-    this.categories = wordCounter.wordFreq();
+  constructor(private wordCounter: WordUtilsService) {
+    this.cloudData = wordCounter.cloudData();
   }
 
+  openLink(link: string) {
+    window.open(Data.NETFLIX_CATEGORY_PAGE + link);
+  }
 
+  tagClick(tag: CloudData) {
+    if (tag.text.match('All')) {
+      this.searchText = '';
+    } else {
+      this.searchText = (tag.text);
+    }
+    console.log(tag.text);
+  }
 }

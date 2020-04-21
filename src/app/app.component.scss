@@ -1,18 +1,18 @@
 @import '../styles-variables';
+
 .container {
   display: grid;
   grid-gap: 20px;
   grid-template-areas: "word-cloud" "search-category" "search-result" "footer";
-  grid-template-rows: minmax(60px, auto) minmax(70px, auto) 1fr auto;
+  grid-template-rows: minmax(60px, 200px) minmax(70px, auto) 1fr auto;
   width: 100%;
-  @media (min-width: map-get($grid-breakpoints, sm)) {
+  @media (max-width: map-get($grid-breakpoints, sm)) {
     width: 50%;
   }
 }
 
-.list {
-  list-style-type: none;
-
+.link:hover {
+  cursor: pointer;
 }
 
 .main-footer {
@@ -26,7 +26,7 @@
 
 .search-result {
   min-height: 20vh;
-  max-height: 65vh;
+  max-height: 45vh;
   grid-area: search-result;
   text-align: center;
   font-family: 'Inconsolata', monospace;
@@ -39,7 +39,12 @@
   text-align: center;
   margin-top: 5%;
   font-family: 'Inconsolata', monospace;
+  font-size: 5px;
   color: whitesmoke;
+  width: 100%;
+  @media (max-width: map-get($grid-breakpoints, sm)) {
+    width: 50%;
+  }
 }
 
 .search-category {
@@ -168,20 +173,58 @@
   }
 }
 
-#scroll-style::-webkit-scrollbar-track
-{
-  -webkit-box-shadow: inset 0 0 6px rgba(245,245,245,0.3);
+#scroll-style::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(245, 245, 245, 0.3);
   border-radius: 10px;
 }
 
-#scroll-style::-webkit-scrollbar
-{
+#scroll-style::-webkit-scrollbar {
   width: 12px;
 }
 
-#scroll-style::-webkit-scrollbar-thumb
-{
+#scroll-style::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(245,245,245,.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(245, 245, 245, .3);
   background-color: whitesmoke;
+}
+
+::ng-deep angular-tag-cloud.word span.w10 {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+::ng-deep angular-tag-cloud.word span.w9 {
+  font-size: 180%;
+}
+
+::ng-deep angular-tag-cloud.word span.w8 {
+  font-size: 160%;
+}
+
+::ng-deep angular-tag-cloud.word span.w7 {
+  font-size: 140%;
+}
+
+::ng-deep angular-tag-cloud.word span.w6 {
+  font-size: 130%;
+}
+
+::ng-deep angular-tag-cloud.word span.w5 {
+  font-size: 120%;
+}
+
+::ng-deep angular-tag-cloud.word span.w4 {
+  font-size: 110%;
+}
+
+::ng-deep angular-tag-cloud.word span.w3 {
+  font-size: 100%;
+}
+
+::ng-deep angular-tag-cloud.word span.w2 {
+  font-size: 100%;
+}
+
+::ng-deep angular-tag-cloud.word span.w1 {
+  font-size: 100%;
 }
