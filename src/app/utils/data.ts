@@ -583,10 +583,6 @@ export abstract class Data {
         'Horror', 'Movies']
     },
     {
-      link: 8195, name: 'B-Horror Movies ', categories: [
-        'B-Horror', 'Movies']
-    },
-    {
       link: 6895, name: 'Creature Features ', categories: [
         'Creature', 'Features']
     },
