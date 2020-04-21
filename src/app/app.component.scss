@@ -188,6 +188,10 @@
   background-color: whitesmoke;
 }
 
+::ng-deep angular-tag-cloud.word span:hover {
+  cursor: pointer;
+}
+
 ::ng-deep angular-tag-cloud.word span.w10 {
   font-size: 200%;
   font-weight: bold;

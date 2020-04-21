@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {Data} from './utils/data';
 import {WordUtilsService} from './utils/word-utils.service';
-import {CloudData, CloudOptions} from 'angular-tag-cloud-module';
+import {CloudData, CloudOptions, ZoomOnHoverOptions} from 'angular-tag-cloud-module';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +16,13 @@ export class AppComponent {
     height: 150,
     width: 1,
     overflow: false,
+  };
+
+  zoomOnHoverOptions: ZoomOnHoverOptions = {
+    scale: 2.0,
+    transitionTime: 0.5,
+    delay: 0.2,
+    color: 'whitesmoke'
   };
 
   constructor(private wordCounter: WordUtilsService) {
@@ -34,4 +41,5 @@ export class AppComponent {
     }
     console.log(tag.text);
   }
+
 }
